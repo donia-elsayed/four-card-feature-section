@@ -1,122 +1,95 @@
-body {
-  background-color: #f2ebe3;
+body{
+    font-family: "Poppins", sans-serif;
 }
-.product__preview__card {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+main{
+    margin: 100px auto;
 }
-.product__preview__card__img {
-  width: 320px;
+.feature__cards{
+    text-align: center;
 }
-.product__preview__card__img img {
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  max-height: 400px;
+.feature__cards span{
+    color:#697077;
+    font-size:1.9rem;
+    font-weight: 200;
 }
-.product__preview__card__details {
-  background-color: #ffffff;
-  width: 260px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 30px 20px 0px 40px;
+.feature__cards h1{
+    color:#4c4e61;  
+    margin-top: 0px;
 }
-.product__preview__card__details span {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #6c7289;
-  font-weight: 500;
-  font-size: small;
+.feature__cards p{
+    color: #697077;
+    width: 34rem;
+    margin: auto;
 }
-.product__preview__card__details h1 {
-  font-family: "Fraunces", serif;
-  width: 14rem;
-  line-height: 1;
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 60px;
 }
-.product__preview__card__details p {
-  font-family: "Montserrat", sans-serif;
-  color: #6c7289;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  width: 15rem;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-.product__price {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.product__price span strong {
-  font-family: "Fraunces", serif;
-  letter-spacing: normal;
-  color: #3c8067;
-  font-weight: 700;
-  font-size: xx-large;
-}
-.product__price span:last-child {
-  letter-spacing: normal;
-  text-decoration: line-through;
-}
-.add__to__cart__button {
-  background-color: #3c8067;
-  display: block;
-  padding: 15px 60px;
-  border-radius: 10px;
-  border: none;
-  margin: 30px 0;
-  display: flex;
-  gap: 10px;
-}
-.add__to__cart__button .add__cart {
-  color: #ffffff;
-  letter-spacing: normal;
-  font-weight: 700;
-  text-transform: none;
+.card{
+    width: 280px;
+    height: max-content;
+    padding:30px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px #f7f4f4;
+    border-radius: 6px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.card__supervisor h3,
+.card__team-builder h3,
+.card__karma h3,
+.card__calculator h3{
+    color:#4c4e61;
+    margin: 0;
+}
+.card__supervisor{
+    border-top: 4px solid  #45d3d3;
+}
+.card__team-builder{
+    border-top: 4px solid #ea5353;
+    margin-bottom: 35px;
+}
+.card__karma{
+    border-top: 4px solid #fcaf4a;
+}
+.card__calculator{
+    border-top: 4px solid #549ef2;
+}
+.card__supervisor img,
+.card__team-builder img,
+.card__karma img,
+.card__calculator img{
+   align-self: flex-end;
+   width: 4rem;
+   margin-bottom: 20px;
+}
+.card p{
+    color:#697077;
+    font-size: small;
+    margin-top: 0.3rem;
+}
 @media screen and (max-width:375px){
-  .product__preview__card {
-    flex-direction: column;
-    position: static;
-    transform: none;
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
-    overflow: hidden;
-  }
-  .product__preview__card__img {
-    width:100%;
-    margin-bottom: 0;
-  }
-  .product__preview__card__img img {
-    content: url('./images/image-product-mobile.jpg');
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    display: block;
-    
-  }
-  .product__preview__card__details{
-    width: 100%;
-    padding: 20px 15px;
-    border-radius: 0 0 10px 10px;
-  }
-  .product__preview__card__details h1{
-    width: 100%;
-  }
-  .product__preview__card__details p{
-    width: 19rem;
-    margin-bottom: 15px;
-  }
-  .add__to__cart__button{
-    margin:15px 0 0;
-    padding: 15px 90px;
-  }
-  .add__to__cart__button .add__cart{
-    text-transform:none;
-  }
+    main{
+        padding:0px 10px;
+    }
+    .feature__cards span{
+        display: block;
+        width: max-content;
+        font-size: 1.7rem;
+    }
+    .feature__cards h1{
+        width: max-content;
+        font-size: 1.7rem;
+    }
+    .feature__cards p{
+        width: auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
 }
