@@ -9,39 +9,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Product preview card component</title>
+    <title>Frontend Mentor | Four card feature section</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="product__preview__card">
-      <div class="product__preview__card__img">
-        <img src="./images/image-product-desktop.jpg" alt="product" />
-      </div>
-      <div class="product__preview__card__details">
-        <span>Perfume</span>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
+    <main>
+      <div class="feature__cards">
+        <span>Reliable, efficient delivery</span>
+        <h1>Powered by Technology</h1>
         <p>
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
         </p>
-        <div class="product__price">
-          <span><strong>$149.99</strong></span>
-          <span>$169.99</span>
-        </div>
-        <button class="add__to__cart__button">
-          <img src="./images/icon-cart.svg" alt="cart" /> <span class="add__cart">Add to Cart</span>
-        </button>
       </div>
-    </div>
+      <div class="cards">
+        <div class="card card__supervisor">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img src="./images/icon-supervisor.svg" alt="supervisor" />
+        </div>
+        <div class="middle__card">
+          <div class="card card__team-builder">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img src="./images/icon-team-builder.svg" alt="team builder" />
+          </div>
+          <div class="card card__karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="./images/icon-karma.svg" alt="karma" />
+          </div>
+        </div>
+        <div class="card card__calculator">
+          <h3>Calculator</h3>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="./images/icon-calculator.svg" alt="calculator" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
